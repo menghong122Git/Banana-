@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Hong — Front-End Developer" />
+  <title>Hong | Front-End Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">Hong<span>.</span></a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__greeting">Hi, I'm</p>
+          <h1 class="hero__name">Hong</h1>
+          <h2 class="hero__role">I'm a <span class="typed" id="typed"></span><span class="cursor">|</span></h2>
+          <p class="hero__desc">I build clean, responsive and accessible websites with HTML, CSS and JavaScript.</p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <!-- Replace with: <img src="assets/images/avatar.jpg" alt="Photo of Hong"> -->
+          <div class="avatar" aria-hidden="true">H</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">About <span>Me</span></h2>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>I'm an aspiring front-end developer learning by building real projects. I love turning ideas into interactive, user-friendly websites.</p>
+            <p>Currently focused on mastering HTML, CSS, JavaScript and modern responsive design.</p>
+          </div>
+          <ul class="about__stats reveal">
+            <li><strong data-count="5">0</strong><span>Projects</span></li>
+            <li><strong data-count="3">0</strong><span>Languages</span></li>
+            <li><strong data-count="100">0</strong><span>Hours Coding</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title">My <span>Skills</span></h2>
+        <div class="skills">
+          <div class="skill reveal"><div class="skill__head"><span>HTML5</span><span>90%</span></div><div class="skill__bar"><div class="skill__fill" data-width="90"></div></div></div>
+          <div class="skill reveal"><div class="skill__head"><span>CSS3</span><span>80%</span></div><div class="skill__bar"><div class="skill__fill" data-width="80"></div></div></div>
+          <div class="skill reveal"><div class="skill__head"><span>JavaScript</span><span>65%</span></div><div class="skill__bar"><div class="skill__fill" data-width="65"></div></div></div>
+          <div class="skill reveal"><div class="skill__head"><span>Git &amp; GitHub</span><span>60%</span></div><div class="skill__bar"><div class="skill__fill" data-width="60"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">My <span>Projects</span></h2>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="html">HTML/CSS</button>
+          <button class="filter" data-filter="js">JavaScript</button>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" data-category="html">
+            <div class="project__thumb" style="--hue: 250">🌐</div>
+            <div class="project__body">
+              <h3>Landing Page</h3>
+              <p>A responsive product landing page built with semantic HTML and Flexbox.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <div class="project__links"><a href="#">Live</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="js">
+            <div class="project__thumb" style="--hue: 160">✅</div>
+            <div class="project__body">
+              <h3>To-Do App</h3>
+              <p>Add, complete and delete tasks — saved in localStorage.</p>
+              <ul class="tags"><li>JavaScript</li><li>DOM</li></ul>
+              <div class="project__links"><a href="#">Live</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="js">
+            <div class="project__thumb" style="--hue: 30">⛅</div>
+            <div class="project__body">
+              <h3>Weather App</h3>
+              <p>Search any city and get live weather using a public API.</p>
+              <ul class="tags"><li>JavaScript</li><li>API</li></ul>
+              <div class="project__links"><a href="#">Live</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="html">
+            <div class="project__thumb" style="--hue: 330">🎨</div>
+            <div class="project__body">
+              <h3>CSS Grid Gallery</h3>
+              <p>A responsive image gallery using CSS Grid and hover effects.</p>
+              <ul class="tags"><li>HTML</li><li>CSS Grid</li></ul>
+              <div class="project__links"><a href="#">Live</a><a href="#">Code</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In <span>Touch</span></h2>
+        <form class="contact" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <small class="error"></small>
+          </div>
+          <div class="field field--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <small class="error"></small>
+          </div>
+          <button type="submit" class="btn btn--primary field--full">Send Message</button>
+          <p class="form-status field--full" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Hong. Built with HTML, CSS &amp; JS.</p>
+      <ul class="socials">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
